@@ -6,14 +6,16 @@ gem 'rails', '3.2.12'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
-
+gem 'activeadmin'
+gem "meta_search",    '>= 1.1.0.pre'
 
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
-
+  gem 'coffee-script-source', '~> 1.4.0' # ADD THIS LINE, 1.5.0 doesn't compile ActiveAdmin JavaScript files
+  
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
 
